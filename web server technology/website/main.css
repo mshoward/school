@@ -1,0 +1,87 @@
+body
+{
+	background-color: #222222;
+}
+
+.wrapper
+{
+	background-color: #222222;
+	font-family: sans-serif;
+	color: #aaaaaa;
+	font-weight: bold;
+	margin-left: 25%;
+	margin-right: 30%;
+
+}
+
+
+.navigation a
+{
+	background-color: #444444;
+	color: #dddddd;
+}
+
+.navigation a:link {
+    color: #dddddd;
+}
+
+/* visited link */
+.navigation a:visited {
+    color: #cccccc;
+}
+
+/* mouse over link */
+.navigation a:hover {
+    color: #EEEEEE;
+	background-color: #555555;
+}
+
+/* selected link */
+.navigation a:active {
+    color: #EEEEEE;
+}
+
+hr
+{
+	height:2px;
+	border-width: 0;
+	color:gray;
+	background-color:#aaaaaa;
+}
+.mid
+{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.mid div
+{
+	padding-top:2%;
+	padding-bottom:2%;
+}
+
+.homeContent
+{
+	
+}
+.homeUpdates
+{
+	
+}
+
+.homeUpdates hr
+{
+	height:1px;
+	border-width: 0;
+	color:gray;
+	background-color:#aaaaaa;
+}
+
+.navigation span
+{
+	/*margin-left: 25px;
+	margin-right: 25px;*/
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: #444444;
+}

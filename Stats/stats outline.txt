@@ -1,0 +1,8 @@
+I)	Introduction
+	A) The raw data is from an exponential distribution
+	B) The purpose of this paper is to illustrate the central limit theorem
+	C) Collected data from 100 samples of 5, 15, and 30 pseudo-random numbers generated from an exponential distribution
+	D) The population distribution's mean is 10, thus the variance is 100, and the standard deviation is 10
+	E) The expected value of a sample's mean is 10, the expected variance is 100, the population variance.  The effects of the number of elements in the sample will be addressed, as well as the distribution of means and variances.
+II) Sample Size of 5
+	A)
