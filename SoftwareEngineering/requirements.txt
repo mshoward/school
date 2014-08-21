@@ -1,0 +1,5 @@
+The program must complete the following tasks:
+	parse a logfile from honeyd
+	parse a logfile from ???
+	connect to a mysql database
+	add records to 

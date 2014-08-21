@@ -1,0 +1,25 @@
+*****   read()   ***********************************
+*1)	read the assembly language program into memory *
+****************************************************
+
+*****   validate()   ***************************************
+*2)	remove comments                                        *
+*                                                          *
+*3)	remove empty lines                                     *
+*                                                          *
+*4)	find a label, map its line number and remove it        *
+*                                                          *
+*5)	step 4 until there are no more labels                  *
+*                                                          *
+*6)	starting at the beginning, validate the translation of *
+*		each instruction according to the maps constructed *
+*		while checking for inconsistencies, like labels    *
+*		that don't exist, jumps out of range, constants    *
+*		out of range, things that haven't been implemented,*
+*		etc.                                               *
+************************************************************
+
+*****   output()   *****************************************
+*7)	if validation was successful, perform the translation, *
+*		outputting to a file.                              *
+************************************************************

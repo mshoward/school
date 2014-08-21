@@ -1,0 +1,6 @@
+unique(X, [], N) :- N = 1.
+unique(X, [Y|Z], N) :- X \= Y, unique(X, Z, N).
+unique(X, [Y|Z], N) :- X = Y, N is (N + 1), unique(X, Z, N).
+
+
+

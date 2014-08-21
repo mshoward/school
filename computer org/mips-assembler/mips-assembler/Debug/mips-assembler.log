@@ -1,0 +1,4 @@
+﻿  mips-assembler.cpp
+c:\users\mason\documents\visual studio 2012\projects\mips-assembler\mips-assembler\assembly_mapper.h(100): warning C4018: '<' : signed/unsigned mismatch
+c:\users\mason\documents\visual studio 2012\projects\mips-assembler\mips-assembler\assembly_mapper.h(103): warning C4018: '<' : signed/unsigned mismatch
+  mips-assembler.vcxproj -> c:\users\mason\documents\visual studio 2012\Projects\mips-assembler\Debug\mips-assembler.exe

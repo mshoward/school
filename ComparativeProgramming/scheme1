@@ -1,0 +1,26 @@
+;Problem 1:
+
+(define fact
+ (lambda (n t)
+    (if (= n 1)
+        t
+        (fact (- n 1) (* n t)))))
+
+(fact 5 1)
+
+(define fib
+    (lambda (n s t)
+        (if (= n 0)
+        t
+        (fib (- n 1) t (+ s t)))))
+(define fibo
+    (lambda (n)
+        (fib n 1 1)))
+(fibo 7)
+
+(define gcdd
+(lambda (x y)
+    (if (= y 0)
+        x
+        (gcdd y (mod x y)))))
+(gcdd 54 63)
