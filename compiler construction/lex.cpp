@@ -22,6 +22,8 @@ lex::lex()
 	//fund
 	curr_char = 0;
 	current_token = 0;
+	curr_state = ALL_NUMBERS;
+	CT_should_be_pushed = false;
 	
 	//stl
 	//nothing to do
@@ -35,6 +37,8 @@ lex::~lex()
 	file_stream.sync();
 	file_stream.flush();
 	file_stream.close();
+	file_stream_out.flush();
+	file_stream_out.close();
 	token_list.clear();
 	id_table.clear();
 }

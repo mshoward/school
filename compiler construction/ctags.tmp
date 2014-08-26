@@ -1,0 +1,72 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_MOD_BY	Bostjan Mihoric	/ccompletion@gmail.com/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	/unofficial modification/
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	/unofficial modification/
+ALL_NUMBERS	lex.hpp	29;"	enumerator	enum:lex::curr_tok_state
+CT_should_be_pushed	lex.hpp	31;"	member	class:lex
+MIXED	lex.hpp	29;"	enumerator	enum:lex::curr_tok_state
+clear	lex.cpp	17;"	prototype	file:
+clear	lex.cpp	42;"	prototype	file:
+clear	lex.cpp	43;"	prototype	file:
+close	lex.cpp	39;"	prototype	file:
+close	lex.cpp	41;"	prototype	file:
+curr_char	lex.hpp	27;"	member	class:lex
+curr_state	lex.hpp	30;"	member	class:lex
+curr_tok_state	lex.hpp	29;"	enum	class:lex
+curr_token	lex.hpp	44;"	member	class:lex
+current_token	lex.hpp	28;"	member	class:lex
+endl	main.cpp	17;"	local
+endl	main.cpp	19;"	local
+endl	main.cpp	30;"	local
+endl	main.cpp	34;"	local
+file_stream	lex.hpp	34;"	member	class:lex
+file_stream_out	lex.hpp	35;"	member	class:lex
+flush	lex.cpp	38;"	prototype	file:
+flush	lex.cpp	40;"	prototype	file:
+flush	main.cpp	26;"	prototype	file:
+id_table	lex.hpp	38;"	member	class:lex
+inFile	main.cpp	18;"	local
+inFile	main.cpp	9;"	local
+inputData	lex.hpp	40;"	member	class:lex
+isConstant	lex.cpp	55;"	prototype	class:lex	file:
+isConstant	lex.hpp	62;"	prototype	class:lex
+isDelimiter	lex.cpp	46;"	function	class:lex
+isDelimiter	lex.cpp	51;"	function	class:lex
+isDelimiter	lex.hpp	59;"	prototype	class:lex
+isDelimiter	lex.hpp	60;"	prototype	class:lex
+isKeyWord	lex.cpp	59;"	function	class:lex
+isKeyWord	lex.cpp	73;"	function	class:lex
+isKeyWord	lex.hpp	63;"	prototype	class:lex
+isKeyWord	lex.hpp	64;"	prototype	class:lex
+lex	lex.cpp	20;"	function	class:lex
+lex	lex.hpp	23;"	class
+lex	lex.hpp	49;"	prototype	class:lex
+lexer	main.cpp	8;"	local
+main	main.cpp	6;"	function
+outFile	main.cpp	20;"	local
+outFile	main.cpp	9;"	local
+outputData	lex.hpp	41;"	member	class:lex
+printFile	lex.hpp	57;"	prototype	class:lex
+printFile	main.cpp	29;"	prototype	file:
+push	lex.hpp	17;"	function	class:token
+readFile	lex.hpp	55;"	prototype	class:lex
+readFile	main.cpp	27;"	prototype	file:
+setFileIn	lex.hpp	52;"	prototype	class:lex
+setFileOut	lex.hpp	53;"	prototype	class:lex
+sync	lex.cpp	37;"	prototype	file:
+token	lex.cpp	8;"	function	class:token
+token	lex.hpp	15;"	prototype	class:token
+token	lex.hpp	8;"	class
+token_class	lex.hpp	12;"	member	class:token
+token_list	lex.hpp	37;"	member	class:lex
+token_subscript	lex.hpp	13;"	member	class:token
+tokenizeFile	lex.hpp	56;"	prototype	class:lex
+tokenizeFile	main.cpp	28;"	prototype	file:
+val	lex.hpp	11;"	member	class:token
+~lex	lex.cpp	35;"	function	class:lex
+~lex	lex.hpp	50;"	prototype	class:lex
+~token	lex.cpp	15;"	function	class:token
+~token	lex.hpp	16;"	prototype	class:token
