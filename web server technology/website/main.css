@@ -41,6 +41,33 @@ body
     color: #EEEEEE;
 }
 
+.headings a
+{
+	/* background-color: #444444; */
+	color: #dddddd;
+}
+
+.headings a:link {
+    color: #dddddd;
+}
+
+/* visited link */
+.headings a:visited {
+    color: #cccccc;
+}
+
+/* mouse over link */
+.headings a:hover {
+    color: #EEEEEE;
+	/* background-color: #555555; */
+}
+
+/* selected link */
+.headings a:active {
+    color: #EEEEEE;
+}
+
+
 hr
 {
 	height:2px;
