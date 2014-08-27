@@ -15,6 +15,7 @@ body
 }
 
 
+
 .navigation a
 {
 	background-color: #444444;
@@ -111,4 +112,29 @@ hr
 	padding-left: 25px;
 	padding-right: 25px;
 	background-color: #444444;
+}
+.headings table
+{
+	color: #aaaaaa;
+	
+	margin:auto;
+	width: 60%;
+
+	
+	border-width: 2px;
+	border-color: #dddddd;
+}
+.headings tr
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.headings td
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
