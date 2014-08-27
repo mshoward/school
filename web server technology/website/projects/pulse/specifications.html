@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
 	<div class="wrapper">
 		<div class = "head">
 			<div class = "navigation">
@@ -19,95 +18,109 @@
 				<span><a href = "../../about.html">About Me / Contact</a></span>
 				<span><a href = "http://github.com/mshoward" target="blank">Github</a></span>
 			</div>
-			
 			<div class = "headings">
 				<h2>Specifications (loose)</h2>
 				<hr/>
 				<div>
 					<h3>Database Requests</h3>
 					<hr/>
-					<p>I'm not trying to tell you how to design the database, but having these
-						(or something like them) in the database would help greatly.  Not having
-						this information in the database would greatly complicate things. </p>
-					</div>
-					</div>
-					</div>
-					</div>
-					<div class = "headings">
-					<table  border=1 >
-						<tr align="center">
-							<td>Table Description</td>
-							<td colspan=6 >Attributes...</td>
-						</tr>
-						<tr align="center">
-						<td>Lookup_History</td>
-							<td>user_GUID</td>
-							<td colspan = 5>question_id</td>
-						</tr>
-						
-						<tr align="center">
-						<td>Questions</td>
-							<td>question_id</td>
-							<td>priority</td>
-							<td>demographic_id</td>
-							<td>required_answers</td>
-							<td>current_answers</td>
-							<td>question_text</td>
-						</tr>
-						<tr align="center">
-						
-						<td>demographics</td>
-							<td>demographic_id</td>
-							<td>min_age</td>
-							<td>max_age</td>
-							<td>dorm_list_id</td>
-							<td>gender</td>
-							<td>etc.</td>
-						</tr>
-						<tr align="center">
-						
-						<td>dorm_list</td>
-							<td>dorm_list_id</td>
-							<td>demographic_id</td>
-							<td colspan=4>dorm_id</td>
-						</tr>
-						
-						<tr align="center">
-						<td>user</td>
-							<td>guid</td>
-							<td>min_age</td>
-							<td>max_age</td>
-							<td>gender</td>
-							<td>dorm_id</td>
-							<td>major</td>
-							
-						</tr>
-						
-						<tr align="center">
-						<td>responses</td>
-							<td>guid</td>
-							<td>question_id</td>
-							<td colspan = 4>response_text</td>
-						</tr>
-						<tr align="center">
-						<td colspan=7> I can't think of anything else right now </td>
-						</tr>
-					
-					</table>
-					</div>
-					<div class="wrapper">
-					<div class = "head">
-					
+					<p>
+						I promise I'm not trying to tell you how to design the database, but having these
+							(or something like them) in the database would help me greatly.  Not having
+							this information in the database would greatly complicate things.
+					</p>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class = "headings">
+		<table  border=1 >
+			
+			<tr align="center">
+				<td>Table Description</td>
+				<td colspan=6 >Attributes...</td>
+			</tr>
+			
+			<tr align="center">
+			<td>Lookup_History</td>
+				<td>user_GUID</td>
+				<td colspan = 5>question_id</td>
+			</tr>
+			
+			<tr align="center">
+			<td>Questions</td>
+				<td>question_id</td>
+				<td>priority</td>
+				<td>demographic_id</td>
+				<td>required_answers</td>
+				<td>current_answers</td>
+				<td>question_text</td>
+			</tr>
+			<tr align="center">
+			
+			<td>demographics</td>
+				<td>demographic_id</td>
+				<td>min_age</td>
+				<td>max_age</td>
+				<td>dorm_list_id</td>
+				<td>gender</td>
+				<td>etc.</td>
+			</tr>
+			<tr align="center">
+			
+			<td>dorm_list</td>
+				<td>dorm_list_id</td>
+				<td>demographic_id</td>
+				<td colspan=4>dorm_id</td>
+			</tr>
+			
+			<tr align="center">
+			<td>user</td>
+				<td>guid</td>
+				<td>min_age</td>
+				<td>max_age</td>
+				<td>gender</td>
+				<td>dorm_id</td>
+				<td>major</td>
+				
+			</tr>
+			
+			<tr align="center">
+			<td>responses</td>
+				<td>guid</td>
+				<td>question_id</td>
+				<td colspan = 4>response_text</td>
+			</tr>
+			<tr align="center">
+			<td colspan=7> I can't think of anything else right now </td>
+			</tr>
 		
-		<div class = "mid">
-		</div>
-		
-		<div class = "bot">
+		</table>
+	</div>
+	<div class="wrapper">
+		<div class = "head">
+			<div class = "headings">
+				<hr/>
+				<h3>Other notes:</h3>
+				<p>
+					Nothing as yet....
+				</p>
+				<h3>Discussion</h3>
+				<hr/>
+				<span><a href="forum/forum.html">Forums (under *heavy* construction);</a></span>
+				<div class = "comment_section">
+					<h4>Comments</h4>
+					<p>
+						also under construction 
+						(need a database for this, it's not set up yet I don't think, will be set up pretty quick, quicker than the forum)
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
-
+	<div class = "mid">
+	</div>
+	<div class = "bot">
+	</div>
 </body>
 </html>
