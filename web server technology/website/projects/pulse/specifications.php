@@ -138,13 +138,38 @@
 				</table>
 			</form>
 			<?php
-			$fp = @fopen("comments.txt");
+			$fp = @fopen("comments.txt", 'r');
+			$str = "";
+			$out = "";
 			if($fp)
 			{
-				while(
+				$out .= "<table border = 1 style=\"width:100%;\">";
+				while(!feof($fp))
+				{
+					$str = fgetss($fp, 1024, "<p></p>");
+					str_replace(array("\r", "\n"), '', $str);
+					if($str == "(comment)");
+					{
+						$out .= "<tr>";
+						$str = fgetss($fp, 1024, "<p></p>");
+						$out .= "<td>".$str."</td>";
+						$out .= "<td>";
+						$str = fgetss($fp, 1024, "<p></p>");
+						while($str != "(/comment)\n" && !feof($fp))
+						{
+							$out .= $str;
+							$str = fgetss($fp, 1024, "<p></p>");
+						}
+						$out .= "</td></tr>";
+					}
+					
+				}
+				$out .= "</table>";
+				echo $out;
 			}
 			?>
 		</div>
 	</div>
 </body>
 </html>
+
