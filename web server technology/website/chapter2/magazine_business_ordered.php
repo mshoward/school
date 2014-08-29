@@ -4,6 +4,8 @@
   $numBus = $_POST['numBus'];
   $numHip = $_POST['numHip'];
   $numComp = $_POST['numComp'];
+  $address = $_POST['address'];
+  $phone = $_POST['phone'];
 ?>
 <html>
 <head>
@@ -18,9 +20,9 @@
 <h2>Order Results</h2>
 
 <?php
-
+	$orderString = "";
 	echo "<p>Order processed at ".date('H:i, jS F Y')."</p>";
-
+	$orderString .= date('H:i, jS F Y')."#";
 	echo "<p>Your order is as follows: </p>";
     // get total quantity 
 	$numtotal = 0;  //set initial value to 0
@@ -28,7 +30,12 @@
 	$temp = 0;
 	$shipping = 0.00;//this gets lost, I'll add it at the end
 	echo "Items ordered: ".$numtotal."<br /><hr />";
-
+	$orderString .= $numtotal." total#";
+	$orderString .= $numCar." Car mags#";
+	$orderString .= $numBus." Business mags#";
+	$orderString .= $numHip." Hipster mags#";
+	$orderString .= $numComp." Computer mags#";
+	
 //Prints appropiate message if $totalqty is 0 and only prints others if it is something other than 0
 	if ($numtotal == 0) 
 	{
@@ -114,12 +121,35 @@
 	
 	
 	$totalamount += $shipping;
+	$orderString .= "Total including shipping: $".number_format($totalamount,2)."#";
+	$orderString .= "$address#$phone#\n";
 	echo "Total including shipping: $".number_format($totalamount,2)."<br />";
+	echo "$address<br/>$phone<br/>";
+	@ $fh = fopen("orders.txt", 'a');
+	if (!$fh)
+	{
+		echo "Something went wrong.  Please order again, the first one didn't count!";
+	}
+	else
+	{
+		if (!(@fputs($fh, $orderString)))
+		{
+			//echo "fputs returned a value that evaluates to false.  investigate.";
+			echo "Something went wrong.  Please order again, the first one may not have counted.";
+		}
+		else
+		{
+			echo "Thank you for ordering!  We are processing it and will ship as soon as possible!";
+		}
+		fclose($fh);
+		
+	}
 
 	//checks the $find variable to see how the customer was found and prints appropriate message
 
 
 ?>
+<br/><a href="magazine_business_index.html">Home </a>
 </div>
 </div>
 </div>

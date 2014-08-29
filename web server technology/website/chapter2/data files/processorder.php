@@ -65,7 +65,7 @@
 	echo "<p>Phone Number is ".$phone."</p>";
 	$outputstring = $date."\t".$tireqty." tires \t".$oilqty." oil\t"
 					.$sparkqty." spark plugs\t\$".$totalamount
-					."\t". $address."\n".$phone."\n";
+					."\t". $address."\t".$phone."\n";
 
 
 

@@ -13,6 +13,8 @@
 //opens the orders.txt file that is stored in the same folder as this file
    @$fp = fopen("orders.txt", 'rb');
 //checks and if the file could not be opened, it prints a message
+	if(!$fp)
+	{
      echo "<p><strong>No orders pending.
            Please try again later.</strong></p>";
      exit;

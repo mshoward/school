@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_MOD_BY	Bostjan Mihoric	/ccompletion@gmail.com/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	/unofficial modification/
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	/unofficial modification/
+BUS_PRICE	magazine_business_ordered.php	90;"	define
+CAR_PRICE	magazine_business_ordered.php	89;"	define
+COMP_PRICE	magazine_business_ordered.php	92;"	define
+HIP_PRICE	magazine_business_ordered.php	91;"	define
+address	magazine_business_ordered.php	7;"	variable
+fh	magazine_business_ordered.php	128;"	variable
+fh	magazine_view_orders.php	21;"	variable
+i	magazine_business_ordered.php	105;"	variable
+i	magazine_view_orders.php	20;"	variable
+i	magazine_view_orders.php	31;"	variable
+numBus	magazine_business_ordered.php	4;"	variable
+numCar	magazine_business_ordered.php	3;"	variable
+numComp	magazine_business_ordered.php	6;"	variable
+numHip	magazine_business_ordered.php	5;"	variable
+numtotal	magazine_business_ordered.php	28;"	variable
+numtotal	magazine_business_ordered.php	29;"	variable
+orderString	magazine_business_ordered.php	23;"	variable
+phone	magazine_business_ordered.php	8;"	variable
+shipping	magazine_business_ordered.php	31;"	variable
+shipping	magazine_business_ordered.php	52;"	variable
+shipping	magazine_business_ordered.php	60;"	variable
+shipping	magazine_business_ordered.php	68;"	variable
+shipping	magazine_business_ordered.php	76;"	variable
+str	magazine_view_orders.php	18;"	variable
+str	magazine_view_orders.php	32;"	variable
+str2	magazine_view_orders.php	19;"	variable
+tableString	magazine_business_ordered.php	103;"	variable
+temp	magazine_business_ordered.php	30;"	variable
+totalamount	magazine_business_ordered.php	86;"	variable
