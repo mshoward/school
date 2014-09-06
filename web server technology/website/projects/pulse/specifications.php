@@ -138,7 +138,7 @@
 				</table>
 			</form>
 			<?php
-			$fp = @fopen("comments.txt", 'r');
+			$fp = fopen("comments.txt", 'r');
 			$str = "";
 			$out = "";
 			if($fp)
