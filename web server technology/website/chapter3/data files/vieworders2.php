@@ -24,12 +24,12 @@
   }
 // prints a heading for the table
   echo "<table border=\"1\">\n";
-  echo "<tr><th bgcolor=\"#CCCCFF\">Order Date</th>
-            <th bgcolor=\"#CCCCFF\">Tires</th>
-            <th bgcolor=\"#CCCCFF\">Oil</th>
-            <th bgcolor=\"#CCCCFF\">Spark Plugs</th>
-            <th bgcolor=\"#CCCCFF\">Total</th>
-            <th bgcolor=\"#CCCCFF\">Address</th>
+  echo "<tr><th bgcolor=\"#DDDDFF\">Order Date</th>
+            <th bgcolor=\"#DDDDFF\">Tires</th>
+            <th bgcolor=\"#DDDDFF\">Oil</th>
+            <th bgcolor=\"#DDDDFF\">Spark Plugs</th>
+            <th bgcolor=\"#DDDDFF\">Total</th>
+            <th bgcolor=\"#DDDDFF\">Address</th>
          <tr>";
 //prints the body of the table
   for ($i=0; $i<$number_of_orders; $i++) {

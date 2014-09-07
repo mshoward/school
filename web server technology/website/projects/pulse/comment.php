@@ -11,9 +11,9 @@
 	$fp = fopen("comments.txt", 'a');
 	if($fp)
 	{
-		$output = "(comment)\n".$username."\n";
+		$output = "(comment)\r\n".$username."\r\n";
 		$output .= $comment;
-		$output .= "\n(/comment)\n";
+		$output .= "\r\n(/comment)\r\n";
 		fwrite($fp, $output);
 		fclose($fp);
 		echo "<a href=\"specifications.php\">Thank you</a>";

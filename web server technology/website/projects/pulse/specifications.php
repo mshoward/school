@@ -147,18 +147,23 @@
 				while(!feof($fp))
 				{
 					$str = fgetss($fp, 1024, "<p></p>");
-					str_replace(array("\r", "\n"), '', $str);
-					if($str == "(comment)");
+					//echo "A str was $str<br/>";
+					str_replace(array("\r", "\n"), "", $str);
+					//if (! (strcmp($str, "(comment)") || strcmp($str, "(comment)\n")))
+					if(substr($str, 0, 9) == "(comment)\n" || substr($str, 0, 9) == "(comment)")
 					{
 						$out .= "<tr>";
 						$str = fgetss($fp, 1024, "<p></p>");
+						//echo "B str was $str<br/>";
 						$out .= "<td>".$str."</td>";
 						$out .= "<td>";
 						$str = fgetss($fp, 1024, "<p></p>");
-						while($str != "(/comment)\n" && !feof($fp))
+						//echo "C str was $str<br/>";
+						while(($str != "(/comment)\n" && $str != "(/comment)\r\n" && $str != "(/comment)") && !feof($fp))
 						{
 							$out .= $str;
 							$str = fgetss($fp, 1024, "<p></p>");
+							//echo "D str was $str<br/>";
 						}
 						$out .= "</td></tr>";
 					}

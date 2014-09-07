@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['user',['USER',['../class_u_s_e_r.html',1,'USER'],['../class_u_s_e_r.html#a12f18cee6072983d6ad6fbb93523f4e0',1,'USER::USER()'],['../class_u_s_e_r.html#a86b19b9f5033613fda12ab7ce6c8a264',1,'USER::USER(GUID uid)'],['../class_u_s_e_r.html#a44f9e7c917a7e48166716beef43d8a94',1,'USER::USER(std::string str)']]]
+  ['target_5fdemographic',['target_demographic',['../class_q_u_e_s_t_i_o_n.html#a6b9a0aa252c15cef15406f23c88a486b',1,'QUESTION']]],
+  ['tempfits',['tempFits',['../class_d_e_m_o_g_r_a_p_h_i_c.html#addbddd096f1926c39075217d7f465f86',1,'DEMOGRAPHIC']]],
+  ['test_2ecpp',['test.cpp',['../test_8cpp.html',1,'']]],
+  ['test_2ehpp',['test.hpp',['../test_8hpp.html',1,'']]],
+  ['test_5fclient',['test_client',['../classtest__client.html',1,'']]],
+  ['threadstopped',['threadStopped',['../classsock__int.html#ac32fa6eb3ebaf881da67c3e5fed432db',1,'sock_int']]]
 ];

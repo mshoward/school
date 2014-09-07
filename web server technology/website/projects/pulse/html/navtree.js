@@ -1,9 +1,9 @@
 var NAVTREE =
 [
-  [ "pulse", "index.html", [
-    [ "Examples", "md_src_examples__r_e_a_d_m_e.html", null ],
-    [ "8/13/2014", "md_src__r_e_a_d_m_e.html", null ],
-    [ "Implentation of socket.h", "md_src_sock_int__r_e_a_d_m_e.html", null ],
+  [ "pulse_scheduler", "index.html", [
+    [ "Examples", "md_examples__r_e_a_d_m_e.html", null ],
+    [ "8/13/2014", "md__r_e_a_d_m_e.html", null ],
+    [ "Implentation of socket.h", "md_sock_int__r_e_a_d_m_e.html", null ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],
@@ -18,6 +18,7 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -26,7 +27,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_m_y_s_q_l___int_8cpp.html"
+"_m_y_s_q_l___int_8cpp.html",
+"test_8cpp.html#a2ec52aa98e53b6d1f2093bc31e73db34"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

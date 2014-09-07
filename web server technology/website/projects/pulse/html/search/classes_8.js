@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['user',['USER',['../class_u_s_e_r.html',1,'']]]
+  ['scheduler',['scheduler',['../classscheduler.html',1,'']]],
+  ['sock_5fint',['sock_int',['../classsock__int.html',1,'']]]
 ];

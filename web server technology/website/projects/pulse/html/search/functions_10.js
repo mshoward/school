@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tempfits',['tempFits',['../class_demographic.html#a8ae2a711e2da23c3a14e00dfb6466a70',1,'Demographic']]]
+  ['tempfits',['tempFits',['../class_d_e_m_o_g_r_a_p_h_i_c.html#addbddd096f1926c39075217d7f465f86',1,'DEMOGRAPHIC']]]
 ];

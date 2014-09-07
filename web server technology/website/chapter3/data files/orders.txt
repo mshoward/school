@@ -1,0 +1,2 @@
+14:05, 28th August 2014	111 tires 	1 oil	1 spark plugs	$11 114.00	123	456
+14:07, 28th August 2014	456 tires 	456 oil	456 spark plugs	$51 984.00	123	2

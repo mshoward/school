@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['off',['off',['../classsock__int.html#abd401c12badaa20cc1f95ab38facedb5',1,'sock_int']]],
-  ['out_5fport',['out_port',['../classcontrol.html#abb8d80f856354f92f0b1d11e27d0999f',1,'control']]],
-  ['output',['output',['../classsock__int.html#a3322c00ef45ce4addea722d056dc16e3',1,'sock_int']]]
+  ['last_5factivity',['last_activity',['../class_u_s_e_r.html#ae4a5ea20dc86ffca627a89b6f79cdd2e',1,'USER']]]
 ];

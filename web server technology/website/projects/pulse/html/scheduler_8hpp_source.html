@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>pulse: src/scheduler/scheduler.hpp Source File</title>
+<title>pulse_scheduler: scheduler/scheduler.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,7 +29,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">pulse
+   <div id="projectname">pulse_scheduler
    </div>
    <div id="projectbrief">anonymous feedback tool</div>
   </td>
@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('scheduler_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -106,13 +106,30 @@ $(document).ready(function(){initNavTree('scheduler_8hpp_source.html','');});
 <div class="title">scheduler.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="scheduler_8hpp.html">Go to the documentation of this file.</a><div class="fragment"></div><!-- fragment --></div><!-- contents -->
+<a href="scheduler_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="classscheduler.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="classscheduler.html">scheduler</a></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classscheduler.html#a70810d5e9606cc7517cee814be6815c6">    6</a></span>&#160;    <a class="code" href="classdata_bucket.html">dataBucket</a> <a class="code" href="classscheduler.html#a70810d5e9606cc7517cee814be6815c6">dirty_cache</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classscheduler.html#a91c244b8c487ed9e08cdcadfbc913c9a">    7</a></span>&#160;    std::queue&lt;QUESTION_RET&gt; <a class="code" href="classscheduler.html#a91c244b8c487ed9e08cdcadfbc913c9a">return_queue</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classscheduler.html#ac6eb43b4b306ec95520abdc106c1a18a">    8</a></span>&#160;    <a class="code" href="classscheduler.html#ac6eb43b4b306ec95520abdc106c1a18a">scheduler</a>(){}</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classscheduler.html#a4a0e4c12027ab0a23d8aa9e6d9e87ae0">    9</a></span>&#160;    <a class="code" href="classscheduler.html#a4a0e4c12027ab0a23d8aa9e6d9e87ae0">~scheduler</a>(){}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="ttc" id="classscheduler_html_a70810d5e9606cc7517cee814be6815c6"><div class="ttname"><a href="classscheduler.html#a70810d5e9606cc7517cee814be6815c6">scheduler::dirty_cache</a></div><div class="ttdeci">dataBucket dirty_cache</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8hpp_source.html#l00006">scheduler.hpp:6</a></div></div>
+<div class="ttc" id="classscheduler_html_ac6eb43b4b306ec95520abdc106c1a18a"><div class="ttname"><a href="classscheduler.html#ac6eb43b4b306ec95520abdc106c1a18a">scheduler::scheduler</a></div><div class="ttdeci">scheduler()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8hpp_source.html#l00008">scheduler.hpp:8</a></div></div>
+<div class="ttc" id="classscheduler_html_a91c244b8c487ed9e08cdcadfbc913c9a"><div class="ttname"><a href="classscheduler.html#a91c244b8c487ed9e08cdcadfbc913c9a">scheduler::return_queue</a></div><div class="ttdeci">std::queue&lt; QUESTION_RET &gt; return_queue</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8hpp_source.html#l00007">scheduler.hpp:7</a></div></div>
+<div class="ttc" id="classdata_bucket_html"><div class="ttname"><a href="classdata_bucket.html">dataBucket</a></div><div class="ttdef"><b>Definition:</b> <a href="data_bucket_8hpp_source.html#l00003">dataBucket.hpp:3</a></div></div>
+<div class="ttc" id="classscheduler_html_a4a0e4c12027ab0a23d8aa9e6d9e87ae0"><div class="ttname"><a href="classscheduler.html#a4a0e4c12027ab0a23d8aa9e6d9e87ae0">scheduler::~scheduler</a></div><div class="ttdeci">~scheduler()</div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8hpp_source.html#l00009">scheduler.hpp:9</a></div></div>
+<div class="ttc" id="classscheduler_html"><div class="ttname"><a href="classscheduler.html">scheduler</a></div><div class="ttdef"><b>Definition:</b> <a href="scheduler_8hpp_source.html#l00003">scheduler.hpp:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_dc96eb697a66e01ba190c271f9e8ccc9.html">scheduler</a></li><li class="navelem"><a class="el" href="scheduler_8hpp.html">scheduler.hpp</a></li>
-    <li class="footer">Generated on Thu Aug 21 2014 17:04:33 for pulse by
+    <li class="navelem"><a class="el" href="dir_40b1ac17c0144a411dc02cf5a56356d3.html">scheduler</a></li><li class="navelem"><a class="el" href="scheduler_8hpp.html">scheduler.hpp</a></li>
+    <li class="footer">Generated on Sun Sep 7 2014 16:00:22 for pulse_scheduler by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

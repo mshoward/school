@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>These are not the docs you're looking for...</title>
+
+<link href="../main.css" rel="stylesheet" type="text/css" media="screen" />
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class = "head">
+			<div class = "navigation">
+				<span><a href="../index.html">Home</a></span>
+				<span><a href = "../projects.html">Projects</a></span>
+				<span><a href = "../about.html">About Me / Contact</a></span>
+				<span><a href = "http://github.com/mshoward" target="blank">Github</a></span>
+				
+			</div>
+			<div class = "headings">
+				<h2>Maga-zany's</h2>
+				<hr/>
+				<!--<a href="magazine_business_form.html">Our buying form!</a>
+				-->
+			</div>
+		</div><!-- closing head div -->
+		
+		<div class = "mid">
+			
+			<div class = "homeContent">
+				<p>
+					I sell magazines.  This is where you buy them.
+				</p>
+				<form action="magazine_business_ordered.php" method="post">
+					<table border="0">
+						<tr>
+							<td width="250"><em>Item</em></td>
+							<td><em>Price</em></td>
+							
+							<td width="15"><em>Quantity</em></td>
+						</tr>
+						<tr>
+							<td>Cars Maxed</td>
+							<td>$3.00</td>
+							<td align="center"><input type="text" name="numCars" size="3"
+								maxlength="3"></td>
+						</tr>
+						<tr>
+							<td>Business Mag for Business People</td>
+							<td>$15.00</td>
+							<td align="center"><input type="text" name="numBus" size="3" maxlength="3"></td>
+						</tr>
+						<tr>
+							<td>New and Unheard of Trends for Hipsters!</td>
+							<td>$3.14</td>
+							<td align="center"><input type="text" name="numHip" size="3"
+								 maxlength="3"></td>
+						</tr>
+						<tr>
+							<td>Computer Science for Sentient AI</td>
+							<td>$5.00</td>
+							<td align="center"><input type="text" name="numComp" size="3"
+								 maxlength="3"></td>
+						</tr>
+						
+						
+					</table>
+					<table>
+						<tr>
+							<td>Address: </td>
+							<td><input type="text" name="address" size="40" maxlength="40"></td>
+						</tr>
+						<tr>
+							<td>Email Address: </td>
+							<td><input type="text" name="email" size="40" maxlength="40"></td>
+						</tr>
+						<tr>
+							<td>Phone: </td>
+							<td><input type="text" name="phone" size="16" maxlength="40"></td>
+						</tr>
+						<tr>
+							<td colspan="2" align="center"><input type="submit" value="Submit Order"></td>
+						</tr>
+					</table>
+				</form>
+				<p>There is a base shipping rate of $0.75.  For every 10 magazines this is increased
+					by $0.50.  </p>
+			</div>
+			
+			<h3>BUY from me!</h3> <hr/>
+			<a href="magazine_business_index.php">Home </a>
+			<div class = "homeUpdates">
+				
+			</div>
+		</div><!-- closing mid div -->
+		
+		<div class = "bot">
+		</div><!-- closing bot div -->
+	</div> <!-- closing wrapper div -->
+
+</body>
+</html>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>pulse: src/structures/structures.cpp Source File</title>
+<title>pulse_scheduler: structures/structures.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,7 +29,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">pulse
+   <div id="projectname">pulse_scheduler
    </div>
    <div id="projectbrief">anonymous feedback tool</div>
   </td>
@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('structures_8cpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -120,30 +120,30 @@ $(document).ready(function(){initNavTree('structures_8cpp_source.html','');});
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_q_u_e_s_t_i_o_n.html#a9018f903c275d5fbe57de7709e1b9580">   31</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_q_u_e_s_t_i_o_n.html#a9018f903c275d5fbe57de7709e1b9580">QUESTION::fits</a>(<a class="code" href="class_demographic.html">Demographic</a> &amp;dem)</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_q_u_e_s_t_i_o_n.html#a8126c8f1710722c3f5310191f1da8929">   31</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_q_u_e_s_t_i_o_n.html#a8126c8f1710722c3f5310191f1da8929">QUESTION::fits</a>(<a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html">DEMOGRAPHIC</a> &amp;dem)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_q_u_e_s_t_i_o_n.html#aa2ae864ac43067ac8fe4957c4c88c4aa">demo</a> != NULL)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_q_u_e_s_t_i_o_n.html#a18974fc615028fae5aa6d2677aa493fb">demo</a> != NULL)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_q_u_e_s_t_i_o_n.html#aa2ae864ac43067ac8fe4957c4c88c4aa">demo</a>-&gt;<a class="code" href="class_demographic.html#a6378d8684bcef008cddee0afebf2cbe6">fits</a>(dem);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_q_u_e_s_t_i_o_n.html#a18974fc615028fae5aa6d2677aa493fb">demo</a>-&gt;<a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html#aec67ec9d57c3de66476b9e5bd6c4348a">fits</a>(dem);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_q_u_e_s_t_i_o_n.html#a011cd8802e888602b54fbe5378c687d1">   40</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_q_u_e_s_t_i_o_n.html#a9018f903c275d5fbe57de7709e1b9580">QUESTION::fits</a>(<a class="code" href="class_u_s_e_r.html">USER</a> &amp;usr)</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_q_u_e_s_t_i_o_n.html#a011cd8802e888602b54fbe5378c687d1">   40</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_q_u_e_s_t_i_o_n.html#a8126c8f1710722c3f5310191f1da8929">QUESTION::fits</a>(<a class="code" href="class_u_s_e_r.html">USER</a> &amp;usr)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_q_u_e_s_t_i_o_n.html#aa2ae864ac43067ac8fe4957c4c88c4aa">demo</a> != NULL)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_q_u_e_s_t_i_o_n.html#aa2ae864ac43067ac8fe4957c4c88c4aa">demo</a>-&gt;<a class="code" href="class_demographic.html#a6378d8684bcef008cddee0afebf2cbe6">fits</a>(usr);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_q_u_e_s_t_i_o_n.html#a18974fc615028fae5aa6d2677aa493fb">demo</a> != NULL)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_q_u_e_s_t_i_o_n.html#a18974fc615028fae5aa6d2677aa493fb">demo</a>-&gt;<a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html#aec67ec9d57c3de66476b9e5bd6c4348a">fits</a>(usr);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_demographic.html#a8ae2a711e2da23c3a14e00dfb6466a70">   55</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_demographic.html#a8ae2a711e2da23c3a14e00dfb6466a70">Demographic::tempFits</a>(<a class="code" href="class_demographic.html">Demographic</a> &amp;dem)</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_d_e_m_o_g_r_a_p_h_i_c.html#addbddd096f1926c39075217d7f465f86">   55</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html#addbddd096f1926c39075217d7f465f86">DEMOGRAPHIC::tempFits</a>(<a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html">DEMOGRAPHIC</a> &amp;dem)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="defs_8hpp.html#a4ccccc85cf5aa1b3732c96749409f614">MAX_DEM_FIELDS</a>; i++)</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        (</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            (<a class="code" href="class_demographic.html#a74a012fc4490fd4c5bc0c99312578013">fields</a>[i] != dem.<a class="code" href="class_demographic.html#a74a012fc4490fd4c5bc0c99312578013">fields</a>[i]) &amp;&amp;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            (<a class="code" href="class_demographic.html#a74a012fc4490fd4c5bc0c99312578013">fields</a>[i] &gt; 0) &amp;&amp; (dem.<a class="code" href="class_demographic.html#a74a012fc4490fd4c5bc0c99312578013">fields</a>[i] &gt; 0)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            (<a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html#a71894b23efe9e2aaa8efa918672717ac">fields</a>[i] != dem.<a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html#a71894b23efe9e2aaa8efa918672717ac">fields</a>[i]) &amp;&amp;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            (<a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html#a71894b23efe9e2aaa8efa918672717ac">fields</a>[i] &gt; 0) &amp;&amp; (dem.<a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html#a71894b23efe9e2aaa8efa918672717ac">fields</a>[i] &gt; 0)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        )</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -152,25 +152,25 @@ $(document).ready(function(){initNavTree('structures_8cpp_source.html','');});
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_demographic.html#a6378d8684bcef008cddee0afebf2cbe6">   71</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_demographic.html#a6378d8684bcef008cddee0afebf2cbe6">Demographic::fits</a>(<a class="code" href="class_demographic.html">Demographic</a> &amp;dem)</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_d_e_m_o_g_r_a_p_h_i_c.html#aec67ec9d57c3de66476b9e5bd6c4348a">   71</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html#aec67ec9d57c3de66476b9e5bd6c4348a">DEMOGRAPHIC::fits</a>(<a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html">DEMOGRAPHIC</a> &amp;dem)</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_demographic.html#a8ae2a711e2da23c3a14e00dfb6466a70">tempFits</a>(dem);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html#addbddd096f1926c39075217d7f465f86">tempFits</a>(dem);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_demographic.html#ad95bc7cab68cd729457584d277b1c35b">   76</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_demographic.html#a6378d8684bcef008cddee0afebf2cbe6">Demographic::fits</a>(<a class="code" href="class_u_s_e_r.html">USER</a> &amp;usr)</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_d_e_m_o_g_r_a_p_h_i_c.html#ac45cb8f321098252dab67295cf0c4569">   76</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html#aec67ec9d57c3de66476b9e5bd6c4348a">DEMOGRAPHIC::fits</a>(<a class="code" href="class_u_s_e_r.html">USER</a> &amp;usr)</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (usr.<a class="code" href="class_u_s_e_r.html#ab1a752bdc7c78f458c59c8a2e2bce828">demo</a> != NULL)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (usr.<a class="code" href="class_u_s_e_r.html#a94dd4257121119e553be4ebf4a1cc90c">demo</a> != NULL)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_demographic.html#a6378d8684bcef008cddee0afebf2cbe6">fits</a>( *(usr.<a class="code" href="class_u_s_e_r.html#ab1a752bdc7c78f458c59c8a2e2bce828">demo</a>));<span class="comment">//dereference pointer</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html#aec67ec9d57c3de66476b9e5bd6c4348a">fits</a>( *(usr.<a class="code" href="class_u_s_e_r.html#a94dd4257121119e553be4ebf4a1cc90c">demo</a>));<span class="comment">//dereference pointer</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_demographic.html#a96c156728feade7be08657716aca7a7d">   85</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_demographic.html#a6378d8684bcef008cddee0afebf2cbe6">Demographic::fits</a>(<a class="code" href="class_q_u_e_s_t_i_o_n.html">QUESTION</a> &amp;quest)</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_d_e_m_o_g_r_a_p_h_i_c.html#a0fbc7043cf2606311963d6b44244ef57">   85</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html#aec67ec9d57c3de66476b9e5bd6c4348a">DEMOGRAPHIC::fits</a>(<a class="code" href="class_q_u_e_s_t_i_o_n.html">QUESTION</a> &amp;quest)</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span> (quest.<a class="code" href="class_q_u_e_s_t_i_o_n.html#aa2ae864ac43067ac8fe4957c4c88c4aa">demo</a> != NULL)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span> (quest.<a class="code" href="class_q_u_e_s_t_i_o_n.html#a18974fc615028fae5aa6d2677aa493fb">demo</a> != NULL)</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_demographic.html#a6378d8684bcef008cddee0afebf2cbe6">fits</a>( *(quest.<a class="code" href="class_q_u_e_s_t_i_o_n.html#aa2ae864ac43067ac8fe4957c4c88c4aa">demo</a>));<span class="comment">//dereference pointer</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html#aec67ec9d57c3de66476b9e5bd6c4348a">fits</a>( *(quest.<a class="code" href="class_q_u_e_s_t_i_o_n.html#a18974fc615028fae5aa6d2677aa493fb">demo</a>));<span class="comment">//dereference pointer</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('structures_8cpp_source.html','');});
 <div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_u_s_e_r.html#a12f18cee6072983d6ad6fbb93523f4e0">  113</a></span>&#160;<a class="code" href="class_u_s_e_r.html#a12f18cee6072983d6ad6fbb93523f4e0">USER::USER</a>()</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="class_u_s_e_r.html#a8730164f313e709ca26492674e6e3145">guid</a>.<a class="code" href="class_g_u_i_d.html#a1f540968d12764a091f0bdf0c729aca8">guid</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="class_u_s_e_r.html#ab1a752bdc7c78f458c59c8a2e2bce828">demo</a> = NULL;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="class_u_s_e_r.html#a94dd4257121119e553be4ebf4a1cc90c">demo</a> = NULL;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
 <div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_u_s_e_r.html#a86b19b9f5033613fda12ab7ce6c8a264">  118</a></span>&#160;<a class="code" href="class_u_s_e_r.html#a12f18cee6072983d6ad6fbb93523f4e0">USER::USER</a>(<a class="code" href="class_g_u_i_d.html">GUID</a> uid)</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
@@ -210,30 +210,30 @@ $(document).ready(function(){initNavTree('structures_8cpp_source.html','');});
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="ttc" id="class_q_u_e_s_t_i_o_n_html_aa2ae864ac43067ac8fe4957c4c88c4aa"><div class="ttname"><a href="class_q_u_e_s_t_i_o_n.html#aa2ae864ac43067ac8fe4957c4c88c4aa">QUESTION::demo</a></div><div class="ttdeci">Demographic * demo</div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00030">structures.hpp:30</a></div></div>
 <div class="ttc" id="class_g_u_i_d_html_a744c5be8132dbb5ae654b9b5aa132b7e"><div class="ttname"><a href="class_g_u_i_d.html#a744c5be8132dbb5ae654b9b5aa132b7e">GUID::operator=</a></div><div class="ttdeci">GUID &amp; operator=(GUID &amp;uid)</div><div class="ttdef"><b>Definition:</b> <a href="structures_8cpp_source.html#l00013">structures.cpp:13</a></div></div>
-<div class="ttc" id="class_u_s_e_r_html"><div class="ttname"><a href="class_u_s_e_r.html">USER</a></div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00071">structures.hpp:71</a></div></div>
-<div class="ttc" id="class_demographic_html"><div class="ttname"><a href="class_demographic.html">Demographic</a></div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00042">structures.hpp:42</a></div></div>
-<div class="ttc" id="class_demographic_html_a6378d8684bcef008cddee0afebf2cbe6"><div class="ttname"><a href="class_demographic.html#a6378d8684bcef008cddee0afebf2cbe6">Demographic::fits</a></div><div class="ttdeci">bool fits(Demographic &amp;dem)</div><div class="ttdef"><b>Definition:</b> <a href="structures_8cpp_source.html#l00071">structures.cpp:71</a></div></div>
+<div class="ttc" id="class_u_s_e_r_html_a94dd4257121119e553be4ebf4a1cc90c"><div class="ttname"><a href="class_u_s_e_r.html#a94dd4257121119e553be4ebf4a1cc90c">USER::demo</a></div><div class="ttdeci">DEMOGRAPHIC * demo</div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00121">structures.hpp:121</a></div></div>
+<div class="ttc" id="class_q_u_e_s_t_i_o_n_html_a8126c8f1710722c3f5310191f1da8929"><div class="ttname"><a href="class_q_u_e_s_t_i_o_n.html#a8126c8f1710722c3f5310191f1da8929">QUESTION::fits</a></div><div class="ttdeci">bool fits(DEMOGRAPHIC &amp;dem)</div><div class="ttdef"><b>Definition:</b> <a href="structures_8cpp_source.html#l00031">structures.cpp:31</a></div></div>
+<div class="ttc" id="class_u_s_e_r_html"><div class="ttname"><a href="class_u_s_e_r.html">USER</a></div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00110">structures.hpp:110</a></div></div>
+<div class="ttc" id="class_d_e_m_o_g_r_a_p_h_i_c_html"><div class="ttname"><a href="class_d_e_m_o_g_r_a_p_h_i_c.html">DEMOGRAPHIC</a></div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00081">structures.hpp:81</a></div></div>
 <div class="ttc" id="class_g_u_i_d_html_aa1784a4caf2cb1b1270274c257f55d37"><div class="ttname"><a href="class_g_u_i_d.html#aa1784a4caf2cb1b1270274c257f55d37">GUID::matches</a></div><div class="ttdeci">bool matches(GUID &amp;uid)</div><div class="ttdef"><b>Definition:</b> <a href="structures_8cpp_source.html#l00008">structures.cpp:8</a></div></div>
+<div class="ttc" id="class_q_u_e_s_t_i_o_n_html_a18974fc615028fae5aa6d2677aa493fb"><div class="ttname"><a href="class_q_u_e_s_t_i_o_n.html#a18974fc615028fae5aa6d2677aa493fb">QUESTION::demo</a></div><div class="ttdeci">DEMOGRAPHIC * demo</div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00069">structures.hpp:69</a></div></div>
 <div class="ttc" id="class_u_s_e_r_html_aab2927285651e0bb3e1a72a3440183b9"><div class="ttname"><a href="class_u_s_e_r.html#aab2927285651e0bb3e1a72a3440183b9">USER::init</a></div><div class="ttdeci">int init()</div><div class="ttdef"><b>Definition:</b> <a href="structures_8cpp_source.html#l00127">structures.cpp:127</a></div></div>
-<div class="ttc" id="class_u_s_e_r_html_a8730164f313e709ca26492674e6e3145"><div class="ttname"><a href="class_u_s_e_r.html#a8730164f313e709ca26492674e6e3145">USER::guid</a></div><div class="ttdeci">GUID guid</div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00081">structures.hpp:81</a></div></div>
-<div class="ttc" id="class_demographic_html_a74a012fc4490fd4c5bc0c99312578013"><div class="ttname"><a href="class_demographic.html#a74a012fc4490fd4c5bc0c99312578013">Demographic::fields</a></div><div class="ttdeci">int fields[MAX_DEM_FIELDS]</div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00059">structures.hpp:59</a></div></div>
+<div class="ttc" id="class_u_s_e_r_html_a8730164f313e709ca26492674e6e3145"><div class="ttname"><a href="class_u_s_e_r.html#a8730164f313e709ca26492674e6e3145">USER::guid</a></div><div class="ttdeci">GUID guid</div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00120">structures.hpp:120</a></div></div>
+<div class="ttc" id="class_d_e_m_o_g_r_a_p_h_i_c_html_a71894b23efe9e2aaa8efa918672717ac"><div class="ttname"><a href="class_d_e_m_o_g_r_a_p_h_i_c.html#a71894b23efe9e2aaa8efa918672717ac">DEMOGRAPHIC::fields</a></div><div class="ttdeci">int fields[MAX_DEM_FIELDS]</div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00098">structures.hpp:98</a></div></div>
+<div class="ttc" id="class_d_e_m_o_g_r_a_p_h_i_c_html_aec67ec9d57c3de66476b9e5bd6c4348a"><div class="ttname"><a href="class_d_e_m_o_g_r_a_p_h_i_c.html#aec67ec9d57c3de66476b9e5bd6c4348a">DEMOGRAPHIC::fits</a></div><div class="ttdeci">bool fits(DEMOGRAPHIC &amp;dem)</div><div class="ttdef"><b>Definition:</b> <a href="structures_8cpp_source.html#l00071">structures.cpp:71</a></div></div>
 <div class="ttc" id="defs_8hpp_html_a4ccccc85cf5aa1b3732c96749409f614"><div class="ttname"><a href="defs_8hpp.html#a4ccccc85cf5aa1b3732c96749409f614">MAX_DEM_FIELDS</a></div><div class="ttdeci">#define MAX_DEM_FIELDS</div><div class="ttdef"><b>Definition:</b> <a href="defs_8hpp_source.html#l00018">defs.hpp:18</a></div></div>
-<div class="ttc" id="class_q_u_e_s_t_i_o_n_html_a9018f903c275d5fbe57de7709e1b9580"><div class="ttname"><a href="class_q_u_e_s_t_i_o_n.html#a9018f903c275d5fbe57de7709e1b9580">QUESTION::fits</a></div><div class="ttdeci">bool fits(Demographic &amp;dem)</div><div class="ttdef"><b>Definition:</b> <a href="structures_8cpp_source.html#l00031">structures.cpp:31</a></div></div>
-<div class="ttc" id="class_g_u_i_d_html"><div class="ttname"><a href="class_g_u_i_d.html">GUID</a></div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00009">structures.hpp:9</a></div></div>
-<div class="ttc" id="class_q_u_e_s_t_i_o_n_html"><div class="ttname"><a href="class_q_u_e_s_t_i_o_n.html">QUESTION</a></div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00017">structures.hpp:17</a></div></div>
+<div class="ttc" id="class_d_e_m_o_g_r_a_p_h_i_c_html_addbddd096f1926c39075217d7f465f86"><div class="ttname"><a href="class_d_e_m_o_g_r_a_p_h_i_c.html#addbddd096f1926c39075217d7f465f86">DEMOGRAPHIC::tempFits</a></div><div class="ttdeci">bool tempFits(DEMOGRAPHIC &amp;dem)</div><div class="ttdef"><b>Definition:</b> <a href="structures_8cpp_source.html#l00055">structures.cpp:55</a></div></div>
+<div class="ttc" id="class_g_u_i_d_html"><div class="ttname"><a href="class_g_u_i_d.html">GUID</a></div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00048">structures.hpp:48</a></div></div>
+<div class="ttc" id="class_q_u_e_s_t_i_o_n_html"><div class="ttname"><a href="class_q_u_e_s_t_i_o_n.html">QUESTION</a></div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00056">structures.hpp:56</a></div></div>
 <div class="ttc" id="class_u_s_e_r_html_a12f18cee6072983d6ad6fbb93523f4e0"><div class="ttname"><a href="class_u_s_e_r.html#a12f18cee6072983d6ad6fbb93523f4e0">USER::USER</a></div><div class="ttdeci">USER()</div><div class="ttdef"><b>Definition:</b> <a href="structures_8cpp_source.html#l00113">structures.cpp:113</a></div></div>
-<div class="ttc" id="class_g_u_i_d_html_a1f540968d12764a091f0bdf0c729aca8"><div class="ttname"><a href="class_g_u_i_d.html#a1f540968d12764a091f0bdf0c729aca8">GUID::guid</a></div><div class="ttdeci">std::string guid</div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00012">structures.hpp:12</a></div></div>
-<div class="ttc" id="class_u_s_e_r_html_ab1a752bdc7c78f458c59c8a2e2bce828"><div class="ttname"><a href="class_u_s_e_r.html#ab1a752bdc7c78f458c59c8a2e2bce828">USER::demo</a></div><div class="ttdeci">Demographic * demo</div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00082">structures.hpp:82</a></div></div>
-<div class="ttc" id="class_demographic_html_a8ae2a711e2da23c3a14e00dfb6466a70"><div class="ttname"><a href="class_demographic.html#a8ae2a711e2da23c3a14e00dfb6466a70">Demographic::tempFits</a></div><div class="ttdeci">bool tempFits(Demographic &amp;dem)</div><div class="ttdef"><b>Definition:</b> <a href="structures_8cpp_source.html#l00055">structures.cpp:55</a></div></div>
+<div class="ttc" id="class_g_u_i_d_html_a1f540968d12764a091f0bdf0c729aca8"><div class="ttname"><a href="class_g_u_i_d.html#a1f540968d12764a091f0bdf0c729aca8">GUID::guid</a></div><div class="ttdeci">std::string guid</div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00051">structures.hpp:51</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6272b9d4c8f62107df4c324a97442de0.html">structures</a></li><li class="navelem"><a class="el" href="structures_8cpp.html">structures.cpp</a></li>
-    <li class="footer">Generated on Thu Aug 21 2014 17:04:33 for pulse by
+    <li class="navelem"><a class="el" href="dir_c9e20c30cf5906fba8f787a8f1a04eec.html">structures</a></li><li class="navelem"><a class="el" href="structures_8cpp.html">structures.cpp</a></li>
+    <li class="footer">Generated on Sun Sep 7 2014 16:00:22 for pulse_scheduler by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

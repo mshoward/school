@@ -5,6 +5,7 @@ using std::string;
 using std::fstream;
 using std::vector;
 
+
 class token
 {
 public:
@@ -19,6 +20,8 @@ public:
 		val += c;
 	}
 };
+
+
 
 class lex
 {
@@ -63,3 +66,6 @@ public:
 	bool isKeyWord(char c);
 	bool isKeyWord(token c);
 };
+
+
+

@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['_7econfig',['~config',['../classconfig.html#a9b8b1ccf97780676a19296f72fee3aae',1,'config']]],
-  ['_7econtrol',['~control',['../classcontrol.html#ad5d0ca9865cef4014e455892da21258f',1,'control']]],
-  ['_7edemographic',['~Demographic',['../class_demographic.html#a0b9f45bf2773ae449f907bef3414f272',1,'Demographic']]],
-  ['_7equestion',['~QUESTION',['../class_q_u_e_s_t_i_o_n.html#a5a93f43587ee13ae645cc9d41076b6b3',1,'QUESTION']]],
-  ['_7esock_5fint',['~sock_int',['../classsock__int.html#a6779840a3713b57f62c28b3a99e7abce',1,'sock_int']]],
-  ['_7euser',['~USER',['../class_u_s_e_r.html#a1b3f7daf2ddd730774a4177184ea44c7',1,'USER']]]
+  ['unix_5fsocket',['unix_socket',['../class_m_y_s_q_l___int.html#a6e36e311b237e10fecc936d6187d7d6a',1,'MYSQL_Int']]],
+  ['user',['USER',['../class_u_s_e_r.html',1,'USER'],['../class_u_s_e_r.html#a12f18cee6072983d6ad6fbb93523f4e0',1,'USER::USER()'],['../class_u_s_e_r.html#a86b19b9f5033613fda12ab7ce6c8a264',1,'USER::USER(GUID uid)'],['../class_u_s_e_r.html#a44f9e7c917a7e48166716beef43d8a94',1,'USER::USER(std::string str)']]],
+  ['user_5fname',['user_name',['../class_m_y_s_q_l___int.html#a5ee6fc1e419df2ff2f05d7ad659a7ab8',1,'MYSQL_Int']]],
+  ['user_5fpass',['user_pass',['../class_m_y_s_q_l___int.html#ac34db43dd4e3d38b14632486ee7c7445',1,'MYSQL_Int']]]
 ];
