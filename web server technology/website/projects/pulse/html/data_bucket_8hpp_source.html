@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>pulse: src/dataBucket/dataBucket.hpp Source File</title>
+<title>pulse_scheduler: dataBucket/dataBucket.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,7 +29,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">pulse
+   <div id="projectname">pulse_scheduler
    </div>
    <div id="projectbrief">anonymous feedback tool</div>
   </td>
@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('data_bucket_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,20 +111,73 @@ $(document).ready(function(){initNavTree('data_bucket_8hpp_source.html','');});
 <div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="classdata_bucket.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="classdata_bucket.html">dataBucket</a></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classdata_bucket.html#a234d65258e1d50374ab0b45ba9be0e2a">    7</a></span>&#160;    std::vector&lt;QUESTION&gt; <a class="code" href="classdata_bucket.html#a234d65258e1d50374ab0b45ba9be0e2a">question_heap</a>;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;};</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classdata_bucket.html#a0041cc7df67e985c4bfcda4620dee127">   10</a></span>&#160;    std::vector&lt;QUESTION&gt; <a class="code" href="classdata_bucket.html#a0041cc7df67e985c4bfcda4620dee127">question_cache</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classdata_bucket.html#a68beeb2279dbd99e314b20823b9a1fed">   11</a></span>&#160;    std::vector&lt;USER&gt; <a class="code" href="classdata_bucket.html#a68beeb2279dbd99e314b20823b9a1fed">recent_users</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classdata_bucket.html#aff4fa22721bf14b1b6a940f64c112df2">   12</a></span>&#160;    std::queue&lt;RESPONSE&gt; <a class="code" href="classdata_bucket.html#aff4fa22721bf14b1b6a940f64c112df2">response_queue</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classdata_bucket.html#ae0203f904385b3fc9189a40b58d80ec9">   13</a></span>&#160;    std::vector&lt;QUESTION_HISTORY_ENTRY&gt; <a class="code" href="classdata_bucket.html#ae0203f904385b3fc9189a40b58d80ec9">question_history_cache</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classdata_bucket.html#abefbbe8355baeb486975b53db0b83a31">   14</a></span>&#160;    std::vector&lt;DEMOGRAPHIC&gt; <a class="code" href="classdata_bucket.html#abefbbe8355baeb486975b53db0b83a31">demographic_cache</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classdata_bucket.html#a71fa97dd79894e345830ffe403bcf124">   18</a></span>&#160;    <a class="code" href="classdata_bucket.html#a71fa97dd79894e345830ffe403bcf124">dataBucket</a>(){}</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classdata_bucket.html#a8ab1d6e59adc64cbdc4eccf26ee65edc">   19</a></span>&#160;    <a class="code" href="classdata_bucket.html#a8ab1d6e59adc64cbdc4eccf26ee65edc">~dataBucket</a>(){}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdata_bucket.html#ab54f11da391c79b130c94cc383f18569">build_question_heap_from_cache</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdata_bucket.html#ae5b7c38aaa079b71b220c9ce570848ae">queue_response</a>(<a class="code" href="class_r_e_s_p_o_n_s_e.html">RESPONSE</a> &amp;res);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdata_bucket.html#aa8c3b6c7c658d317318accd02327eb56">cache_question</a>(<a class="code" href="class_q_u_e_s_t_i_o_n.html">QUESTION</a> &amp;quest);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdata_bucket.html#a18ae451f477468e353c37b58a76100f2">cache_question_hist</a>(<a class="code" href="class_q_u_e_s_t_i_o_n___h_i_s_t_o_r_y___e_n_t_r_y.html">QUESTION_HISTORY_ENTRY</a> &amp;hist);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdata_bucket.html#ac21e19aff2f66b0732a64efc065c17be">cache_demo</a>(<a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html">DEMOGRAPHIC</a> &amp;dem);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdata_bucket.html#aa31a3bcb54538a82102c29ad63c51817">cache_user</a>(<a class="code" href="class_u_s_e_r.html">USER</a> &amp;usr);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdata_bucket.html#aa31a3bcb54538a82102c29ad63c51817">cache_user</a>(<a class="code" href="class_g_u_i_d.html">GUID</a> &amp;guid);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdata_bucket.html#aa31a3bcb54538a82102c29ad63c51817">cache_user</a>(std::string &amp;guid);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classdata_bucket.html#a81be96b02a81ad1a8abeb1f54576ca85">in_cache</a>(<a class="code" href="class_q_u_e_s_t_i_o_n.html">QUESTION</a> &amp;quest);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classdata_bucket.html#a81be96b02a81ad1a8abeb1f54576ca85">in_cache</a>(<a class="code" href="class_q_u_e_s_t_i_o_n___h_i_s_t_o_r_y___e_n_t_r_y.html">QUESTION_HISTORY_ENTRY</a> &amp;hist);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classdata_bucket.html#a81be96b02a81ad1a8abeb1f54576ca85">in_cache</a>(<a class="code" href="class_d_e_m_o_g_r_a_p_h_i_c.html">DEMOGRAPHIC</a> &amp;dem);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classdata_bucket.html#a81be96b02a81ad1a8abeb1f54576ca85">in_cache</a>(<a class="code" href="class_u_s_e_r.html">USER</a> &amp;usr);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classdata_bucket.html#a81be96b02a81ad1a8abeb1f54576ca85">in_cache</a>(<a class="code" href="class_g_u_i_d.html">GUID</a> &amp;guid);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classdata_bucket.html#a81be96b02a81ad1a8abeb1f54576ca85">in_cache</a>(std::string &amp;guid);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_q_u_e_s_t_i_o_n.html">QUESTION</a>&amp; <a class="code" href="classdata_bucket.html#a1809c1c73669c79932e4d14677c2d7e8">process_request</a>(<a class="code" href="class_g_u_i_d.html">GUID</a> &amp;guid);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdata_bucket.html#a25d41b1d15e6a50ec775316c8cdcb740">process_response</a>(<a class="code" href="class_r_e_s_p_o_n_s_e.html">RESPONSE</a> &amp;res);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="ttc" id="classdata_bucket_html_ae5b7c38aaa079b71b220c9ce570848ae"><div class="ttname"><a href="classdata_bucket.html#ae5b7c38aaa079b71b220c9ce570848ae">dataBucket::queue_response</a></div><div class="ttdeci">void queue_response(RESPONSE &amp;res)</div></div>
+<div class="ttc" id="classdata_bucket_html_aff4fa22721bf14b1b6a940f64c112df2"><div class="ttname"><a href="classdata_bucket.html#aff4fa22721bf14b1b6a940f64c112df2">dataBucket::response_queue</a></div><div class="ttdeci">std::queue&lt; RESPONSE &gt; response_queue</div><div class="ttdef"><b>Definition:</b> <a href="data_bucket_8hpp_source.html#l00012">dataBucket.hpp:12</a></div></div>
+<div class="ttc" id="classdata_bucket_html_a0041cc7df67e985c4bfcda4620dee127"><div class="ttname"><a href="classdata_bucket.html#a0041cc7df67e985c4bfcda4620dee127">dataBucket::question_cache</a></div><div class="ttdeci">std::vector&lt; QUESTION &gt; question_cache</div><div class="ttdoc">caches </div><div class="ttdef"><b>Definition:</b> <a href="data_bucket_8hpp_source.html#l00010">dataBucket.hpp:10</a></div></div>
+<div class="ttc" id="classdata_bucket_html_a8ab1d6e59adc64cbdc4eccf26ee65edc"><div class="ttname"><a href="classdata_bucket.html#a8ab1d6e59adc64cbdc4eccf26ee65edc">dataBucket::~dataBucket</a></div><div class="ttdeci">~dataBucket()</div><div class="ttdef"><b>Definition:</b> <a href="data_bucket_8hpp_source.html#l00019">dataBucket.hpp:19</a></div></div>
+<div class="ttc" id="classdata_bucket_html_a18ae451f477468e353c37b58a76100f2"><div class="ttname"><a href="classdata_bucket.html#a18ae451f477468e353c37b58a76100f2">dataBucket::cache_question_hist</a></div><div class="ttdeci">void cache_question_hist(QUESTION_HISTORY_ENTRY &amp;hist)</div></div>
+<div class="ttc" id="class_u_s_e_r_html"><div class="ttname"><a href="class_u_s_e_r.html">USER</a></div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00110">structures.hpp:110</a></div></div>
+<div class="ttc" id="class_d_e_m_o_g_r_a_p_h_i_c_html"><div class="ttname"><a href="class_d_e_m_o_g_r_a_p_h_i_c.html">DEMOGRAPHIC</a></div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00081">structures.hpp:81</a></div></div>
+<div class="ttc" id="classdata_bucket_html_aa8c3b6c7c658d317318accd02327eb56"><div class="ttname"><a href="classdata_bucket.html#aa8c3b6c7c658d317318accd02327eb56">dataBucket::cache_question</a></div><div class="ttdeci">void cache_question(QUESTION &amp;quest)</div></div>
+<div class="ttc" id="classdata_bucket_html_ac21e19aff2f66b0732a64efc065c17be"><div class="ttname"><a href="classdata_bucket.html#ac21e19aff2f66b0732a64efc065c17be">dataBucket::cache_demo</a></div><div class="ttdeci">void cache_demo(DEMOGRAPHIC &amp;dem)</div></div>
 <div class="ttc" id="classdata_bucket_html"><div class="ttname"><a href="classdata_bucket.html">dataBucket</a></div><div class="ttdef"><b>Definition:</b> <a href="data_bucket_8hpp_source.html#l00003">dataBucket.hpp:3</a></div></div>
+<div class="ttc" id="classdata_bucket_html_aa31a3bcb54538a82102c29ad63c51817"><div class="ttname"><a href="classdata_bucket.html#aa31a3bcb54538a82102c29ad63c51817">dataBucket::cache_user</a></div><div class="ttdeci">void cache_user(USER &amp;usr)</div></div>
+<div class="ttc" id="classdata_bucket_html_a234d65258e1d50374ab0b45ba9be0e2a"><div class="ttname"><a href="classdata_bucket.html#a234d65258e1d50374ab0b45ba9be0e2a">dataBucket::question_heap</a></div><div class="ttdeci">std::vector&lt; QUESTION &gt; question_heap</div><div class="ttdoc">heaps </div><div class="ttdef"><b>Definition:</b> <a href="data_bucket_8hpp_source.html#l00007">dataBucket.hpp:7</a></div></div>
+<div class="ttc" id="class_r_e_s_p_o_n_s_e_html"><div class="ttname"><a href="class_r_e_s_p_o_n_s_e.html">RESPONSE</a></div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00136">structures.hpp:136</a></div></div>
+<div class="ttc" id="classdata_bucket_html_a68beeb2279dbd99e314b20823b9a1fed"><div class="ttname"><a href="classdata_bucket.html#a68beeb2279dbd99e314b20823b9a1fed">dataBucket::recent_users</a></div><div class="ttdeci">std::vector&lt; USER &gt; recent_users</div><div class="ttdef"><b>Definition:</b> <a href="data_bucket_8hpp_source.html#l00011">dataBucket.hpp:11</a></div></div>
+<div class="ttc" id="classdata_bucket_html_abefbbe8355baeb486975b53db0b83a31"><div class="ttname"><a href="classdata_bucket.html#abefbbe8355baeb486975b53db0b83a31">dataBucket::demographic_cache</a></div><div class="ttdeci">std::vector&lt; DEMOGRAPHIC &gt; demographic_cache</div><div class="ttdef"><b>Definition:</b> <a href="data_bucket_8hpp_source.html#l00014">dataBucket.hpp:14</a></div></div>
+<div class="ttc" id="class_g_u_i_d_html"><div class="ttname"><a href="class_g_u_i_d.html">GUID</a></div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00048">structures.hpp:48</a></div></div>
+<div class="ttc" id="class_q_u_e_s_t_i_o_n_html"><div class="ttname"><a href="class_q_u_e_s_t_i_o_n.html">QUESTION</a></div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00056">structures.hpp:56</a></div></div>
+<div class="ttc" id="classdata_bucket_html_ae0203f904385b3fc9189a40b58d80ec9"><div class="ttname"><a href="classdata_bucket.html#ae0203f904385b3fc9189a40b58d80ec9">dataBucket::question_history_cache</a></div><div class="ttdeci">std::vector&lt; QUESTION_HISTORY_ENTRY &gt; question_history_cache</div><div class="ttdef"><b>Definition:</b> <a href="data_bucket_8hpp_source.html#l00013">dataBucket.hpp:13</a></div></div>
+<div class="ttc" id="classdata_bucket_html_a81be96b02a81ad1a8abeb1f54576ca85"><div class="ttname"><a href="classdata_bucket.html#a81be96b02a81ad1a8abeb1f54576ca85">dataBucket::in_cache</a></div><div class="ttdeci">bool in_cache(QUESTION &amp;quest)</div></div>
+<div class="ttc" id="classdata_bucket_html_a1809c1c73669c79932e4d14677c2d7e8"><div class="ttname"><a href="classdata_bucket.html#a1809c1c73669c79932e4d14677c2d7e8">dataBucket::process_request</a></div><div class="ttdeci">QUESTION &amp; process_request(GUID &amp;guid)</div></div>
+<div class="ttc" id="classdata_bucket_html_a25d41b1d15e6a50ec775316c8cdcb740"><div class="ttname"><a href="classdata_bucket.html#a25d41b1d15e6a50ec775316c8cdcb740">dataBucket::process_response</a></div><div class="ttdeci">void process_response(RESPONSE &amp;res)</div></div>
+<div class="ttc" id="classdata_bucket_html_a71fa97dd79894e345830ffe403bcf124"><div class="ttname"><a href="classdata_bucket.html#a71fa97dd79894e345830ffe403bcf124">dataBucket::dataBucket</a></div><div class="ttdeci">dataBucket()</div><div class="ttdef"><b>Definition:</b> <a href="data_bucket_8hpp_source.html#l00018">dataBucket.hpp:18</a></div></div>
+<div class="ttc" id="classdata_bucket_html_ab54f11da391c79b130c94cc383f18569"><div class="ttname"><a href="classdata_bucket.html#ab54f11da391c79b130c94cc383f18569">dataBucket::build_question_heap_from_cache</a></div><div class="ttdeci">void build_question_heap_from_cache()</div></div>
+<div class="ttc" id="class_q_u_e_s_t_i_o_n___h_i_s_t_o_r_y___e_n_t_r_y_html"><div class="ttname"><a href="class_q_u_e_s_t_i_o_n___h_i_s_t_o_r_y___e_n_t_r_y.html">QUESTION_HISTORY_ENTRY</a></div><div class="ttdef"><b>Definition:</b> <a href="structures_8hpp_source.html#l00144">structures.hpp:144</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_404e1a4c29f849cb9482a0463df43c65.html">dataBucket</a></li><li class="navelem"><a class="el" href="data_bucket_8hpp.html">dataBucket.hpp</a></li>
-    <li class="footer">Generated on Thu Aug 21 2014 17:04:33 for pulse by
+    <li class="navelem"><a class="el" href="dir_d41bc6fa56ccfd47b9191a7ad20f9a56.html">dataBucket</a></li><li class="navelem"><a class="el" href="data_bucket_8hpp.html">dataBucket.hpp</a></li>
+    <li class="footer">Generated on Sun Sep 7 2014 16:00:22 for pulse_scheduler by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,5 +1,7 @@
 <map id="control" name="control">
-<area shape="rect" id="node2" href="$classconfig.html" title="config" alt="" coords="5,125,61,152"/>
-<area shape="rect" id="node3" href="$classsock__int.html" title="sock_int" alt="" coords="107,125,177,152"/>
-<area shape="rect" id="node4" href="$structsock__int_1_1buf.html" title="sock_int::buf" alt="" coords="43,5,140,32"/>
+<area shape="rect" id="node2" href="$classconfig.html" title="config" alt="" coords="15,125,72,152"/>
+<area shape="rect" id="node3" href="$classsock__int.html" title="sock_int" alt="" coords="117,125,187,152"/>
+<area shape="rect" id="node4" href="$structsock__int_1_1buf.html" title="sock_int::buf" alt="" coords="5,5,101,32"/>
+<area shape="rect" id="node6" href="$classscheduler.html" title="scheduler" alt="" coords="211,125,289,152"/>
+<area shape="rect" id="node7" href="$classdata_bucket.html" title="dataBucket" alt="" coords="207,5,295,32"/>
 </map>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['mapper',['mapper',['../classconfig.html#a0e9b0962c79ec328511e48a732df3b5e',1,'config']]],
-  ['mysql_5fport',['mysql_port',['../classcontrol.html#abc33adb5df27dd1baa1c4141d5420eb4',1,'control']]]
+  ['host_5fname',['host_name',['../class_m_y_s_q_l___int.html#a777a5a86bd37af4b2f52600a116402c3',1,'MYSQL_Int']]]
 ];

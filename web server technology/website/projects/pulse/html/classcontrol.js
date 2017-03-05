@@ -8,6 +8,7 @@ var classcontrol =
     [ "init_sock", "classcontrol.html#a946dbe2c264959e286d3540c60f4b117", null ],
     [ "Next_dirty_sock_line", "classcontrol.html#a0297b6e5fb4cce8b267940a7e550da17", null ],
     [ "configuration", "classcontrol.html#a8b01203776f0d04192f7bc70a63460bd", null ],
+    [ "dirty_scheduler", "classcontrol.html#af56d0afbfea46c2c2c9578b29bead4b0", null ],
     [ "dirty_sock", "classcontrol.html#a43b3053ce2394419bec737cb4a867be9", null ],
     [ "errorNo", "classcontrol.html#a3068e1430b662c2a51d95cb45f279521", null ],
     [ "mysql_port", "classcontrol.html#abc33adb5df27dd1baa1c4141d5420eb4", null ],

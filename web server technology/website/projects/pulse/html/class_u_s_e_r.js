@@ -8,6 +8,7 @@ var class_u_s_e_r =
     [ "init", "class_u_s_e_r.html#ab7a5dc092aa76b4e2ea41385b3a399fc", null ],
     [ "init", "class_u_s_e_r.html#a5b8e5bd1b1d13ebbeb7e1a47dcb51f8a", null ],
     [ "matches", "class_u_s_e_r.html#a2ff3411bc3171c7244aced568bd9cc03", null ],
-    [ "demo", "class_u_s_e_r.html#ab1a752bdc7c78f458c59c8a2e2bce828", null ],
-    [ "guid", "class_u_s_e_r.html#a8730164f313e709ca26492674e6e3145", null ]
+    [ "demo", "class_u_s_e_r.html#a94dd4257121119e553be4ebf4a1cc90c", null ],
+    [ "guid", "class_u_s_e_r.html#a8730164f313e709ca26492674e6e3145", null ],
+    [ "last_activity", "class_u_s_e_r.html#ae4a5ea20dc86ffca627a89b6f79cdd2e", null ]
 ];

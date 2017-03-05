@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['config',['config',['../classconfig.html',1,'']]],
-  ['control',['control',['../classcontrol.html',1,'']]]
+  ['buf',['buf',['../structsock__int_1_1buf.html',1,'sock_int']]]
 ];

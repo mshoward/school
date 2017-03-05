@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['serv_5faddr',['serv_addr',['../classsock__int.html#a23fd5ed58e0d7d59058a39bd3b209f16',1,'sock_int']]],
-  ['sockfd',['sockfd',['../classsock__int.html#a27ac0a8efdd5d7a07da3147e4a2c7d62',1,'sock_int']]],
-  ['stopreadthreadsig',['stopReadThreadSig',['../classsock__int.html#a3263edfa158d07016874a75e59860be7',1,'sock_int']]],
-  ['storage',['storage',['../classsock__int.html#a3791297fc4369d8b1396714009cfe85e',1,'sock_int']]]
+  ['port_5fno',['port_no',['../class_m_y_s_q_l___int.html#a0f07daf945c53ccedb28ac4a80d90206',1,'MYSQL_Int']]],
+  ['portno',['portno',['../classsock__int.html#ac7a58f837af1c1b1d4b44025bd28b501',1,'sock_int']]],
+  ['priority_5fclass',['priority_class',['../class_q_u_e_s_t_i_o_n.html#a10e0b760be75ee3c8d56e1b37d582e0f',1,'QUESTION']]]
 ];

@@ -1,9 +1,21 @@
 var searchData=
 [
-  ['target_5fdemographic',['target_demographic',['../class_q_u_e_s_t_i_o_n.html#a6b9a0aa252c15cef15406f23c88a486b',1,'QUESTION']]],
-  ['tempfits',['tempFits',['../class_demographic.html#a8ae2a711e2da23c3a14e00dfb6466a70',1,'Demographic']]],
-  ['test_2ecpp',['test.cpp',['../test_8cpp.html',1,'']]],
-  ['test_2ehpp',['test.hpp',['../test_8hpp.html',1,'']]],
-  ['test_5fclient',['test_client',['../classtest__client.html',1,'']]],
-  ['threadstopped',['threadStopped',['../classsock__int.html#ac32fa6eb3ebaf881da67c3e5fed432db',1,'sock_int']]]
+  ['scheduler',['scheduler',['../classscheduler.html',1,'scheduler'],['../classscheduler.html#ac6eb43b4b306ec95520abdc106c1a18a',1,'scheduler::scheduler()']]],
+  ['scheduler_2ecpp',['scheduler.cpp',['../scheduler_8cpp.html',1,'']]],
+  ['scheduler_2ehpp',['scheduler.hpp',['../scheduler_8hpp.html',1,'']]],
+  ['serv_5faddr',['serv_addr',['../classsock__int.html#a23fd5ed58e0d7d59058a39bd3b209f16',1,'sock_int']]],
+  ['server_2ec',['server.c',['../server_8c.html',1,'']]],
+  ['setname',['setName',['../classsock__int.html#ab1cdd237c861407a378947b9a69fcb3d',1,'sock_int']]],
+  ['sock_5fint',['sock_int',['../classsock__int.html',1,'sock_int'],['../classsock__int.html#af56c50ca9b505feee5290881486e4a65',1,'sock_int::sock_int()']]],
+  ['sock_5fint_2ecpp',['sock_int.cpp',['../sock__int_8cpp.html',1,'']]],
+  ['sock_5fint_2ehpp',['sock_int.hpp',['../sock__int_8hpp.html',1,'']]],
+  ['sockfd',['sockfd',['../classsock__int.html#a27ac0a8efdd5d7a07da3147e4a2c7d62',1,'sock_int']]],
+  ['start',['start',['../classsock__int.html#a5e4e93e8ef28b802a5acf8a093c47226',1,'sock_int']]],
+  ['startanddetatchacceptandreadthread',['startAndDetatchAcceptAndReadThread',['../classsock__int.html#aa7e285d845024e849f5821fcc000e5dd',1,'sock_int']]],
+  ['stopreadthread',['stopReadThread',['../classsock__int.html#a87b717df109ceb0322effd7cf48cd3f9',1,'sock_int']]],
+  ['stopreadthreadsig',['stopReadThreadSig',['../classsock__int.html#a3263edfa158d07016874a75e59860be7',1,'sock_int']]],
+  ['storage',['storage',['../classsock__int.html#a3791297fc4369d8b1396714009cfe85e',1,'sock_int']]],
+  ['stripcomment',['stripComment',['../classconfig.html#a35320a7df595c3215b0724444f878258',1,'config']]],
+  ['structures_2ecpp',['structures.cpp',['../structures_8cpp.html',1,'']]],
+  ['structures_2ehpp',['structures.hpp',['../structures_8hpp.html',1,'']]]
 ];
