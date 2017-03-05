@@ -1,0 +1,88 @@
+﻿CS 4223 – Preliminary Grammar for the Compiler
+
+P ::= program D begin S end.
+
+D ::= IL : AR D | IL : integer D | ∈
+
+AR ::= array | array(AR)
+
+IL ::= ID IL | , ID IL | ∈
+
+ID ::= id | id(SB)
+
+SB ::= cons SB | id SB | , cons SB | , id SB | ∈
+
+S ::=  do S unless C | S when C | S when C else S | (IL)in | (IL)out | assign E to ID |
+	S ; S
+
+E ::= id | cons | + E E | - E E | * E E |  / E E
+
+C ::= < E E | > E E | = E E | and C C | or C C | not C
+
+
+Format:
+1.  Source lines are 80 characters in length and tokens may appear anywhere in the line.
+2.  A token may not be broken across line boundaries.
+3.  A comment is any sequence of characters beginning with /* and ending with */
+4.  Tokens for reserved words must be separated from one another by at least one blank (but perhaps more than one blank).
+5.  Upper and lowercase characters are equivalent.
+6.  Spaces and symbols are delimiters.
+
+Common Prefix Elimination
+
+P ::= program D begin S end.
+
+D   ::=  IL : D’ |
+		 ε
+
+D’  ::=  AR D | 
+		integer D
+
+AR  ::= array AR’
+
+AR’ ::= (AR) | 
+		ε
+
+IL  ::= ID IL | 
+		, ID IL | 
+		ε
+
+ID  ::= id ID’
+ID’ ::= (SB) | 
+		ε
+
+SB  ::= cons SB | 
+		id SB | 
+		, SB’ | 
+		ε
+
+SB’ ::= cons SB | 
+		id SB
+
+S   ::= do S S’ | 
+		(IL) S’’ | 
+		assign E to ID ; S | 
+		ε
+
+S‘  ::= unless C ; S | 
+		when C S’’’ 
+
+S’’ ::= in ; S | 
+		out ; S
+
+S’’’ ::=  ; S |
+		 else S ; S
+
+E  ::=	id | 
+		cons | 
+		+EE | 
+		-EE | 
+		*EE | 
+		/EE
+
+C  ::=	<EE | 
+		>EE | 
+		=EE | 
+		and CC | 
+		or CC | 
+		not C
